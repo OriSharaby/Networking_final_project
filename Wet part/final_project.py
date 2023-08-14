@@ -72,7 +72,7 @@ def plot_ccdf(dframes, classification):
     dframes (list of pd.DataFrame): List of dataframes containing 'Length' column.
     classification (list of str): Labels for different datasets.
     """
-    output_path = 'C:/Users/USER/Desktop/Networking Project/Wet part/Plots/CCDF/ccdf output.png'
+    output_path = os.getcwd()+'/Plots/CCDF/ccdf output.png'
     plt.figure(figsize=(10, 6))
 
     for df, type in zip(dframes, classification):
@@ -100,14 +100,14 @@ def files_handler():
 
 
 def packet_length_handler(dfs):
-    output_path = 'C:/Users/USER/Desktop/Networking Project/Wet part/Plots/PacketLength/'
+    output_path = os.getcwd()+'/Plots/PacketLength/'
     for name in dfs:
         pltToSave = plot_packet_length_time(dfs[name])
         pltToSave.savefig(output_path + name)
 
 
 def pdf_exponential_distribution_handler(dfs):
-    output_path = 'C:/Users/USER/Desktop/Networking Project/Wet part/Plots/PDF/'
+    output_path = os.getcwd()+'/Plots/PDF/'
     for name in dfs:
         pltToSave = plot_pdf_exponential_distribution(dfs[name])
         pltToSave.savefig(output_path + name)
