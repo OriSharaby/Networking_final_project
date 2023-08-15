@@ -21,12 +21,17 @@ The script is essentially designed to analyze network packet data, generate insi
 
 The project directory contains the following folders:
 
+- `final_packet_analyzer.py`: .
 - `pcap files`: Contains pcap recordings obtained from Wireshark.
 - `csv files`: Contains CSV files containing packet data.
 - `Plots`: Contains output plots organized into subfolders.
     - `IMD`: Inter Message Delays plots.
     - `PDF`: Probability Density Function plots.
     - `CCDF`: Complementary Cumulative Distribution Function plots.
+- `final_packet_analyzer.py`: The main Python file that runs the program.
+- `Article.pdf`: The paper that the project is based on.
+- `Network Project PDF(dry part).pdf`: The dry part that contains answers to questions and a summary of the article.
+
 
 ## Usage
 
