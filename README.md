@@ -64,10 +64,14 @@ pip install matplotlib numpy scapy pandas
 
 ## How to Use
 Export the software recordings to csv files, there are two classifications of recordings: clean recordings, recordings with background noise
-- filter the recordings with filter ip.src ==157.240.195.56 && tls
+* clean recordings
+    *  filter the recordings with filter ip.src ==157.240.195.56 && tls
+    * Name the file "WhatsApp_(The type of messages).csv"
 
-- Filter the recordings with a tls || filter quic || udp || tcp
-
+* recordings with background noise
+    * Filter the recordings with a tls || filter quic || udp || tcp
+    * Name the file "Spotify_WhatsApp_(The type of messages).csv"
+  
 Save the csv files in the 'csv files' subfolder which is in the 'resources' folder
 
 ## Notes
