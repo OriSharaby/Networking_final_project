@@ -21,16 +21,15 @@ The script is essentially designed to analyze network packet data, generate insi
 
 The project directory contains the following folders:
 
-- `final_packet_analyzer.py`: .
-- `pcap files`: Contains pcap recordings obtained from Wireshark.
-- `csv files`: Contains CSV files containing packet data.
-- `Plots`: Contains output plots organized into subfolders.
+- `res`: Contains output plots organized into subfolders.
     - `IMD`: Inter Message Delays plots.
     - `PDF`: Probability Density Function plots.
     - `CCDF`: Complementary Cumulative Distribution Function plots.
-- `final_packet_analyzer.py`: The main Python file that runs the program.
-- `Article.pdf`: The paper that the project is based on.
-- `Network Project PDF(dry part).pdf`: The dry part that contains answers to questions and a summary of the article.
+- `resources`: Contains two types of resources folders.
+    - `pcap files`: Contains pcap recordings obtained from Wireshark.
+    - `csv files`: Contains CSV files containing packet data.
+- `src`: Contains the main Python script.
+    - `final_packet_analyzer.py`: The main Python file that runs the program.
 
 
 ## Usage
@@ -52,7 +51,7 @@ pip install matplotlib numpy scapy pandas
 
    This will execute the script and generate various plots based on the provided CSV files.
 
-3. **Review Plots**: After running the script, the generated plots will be saved in the `Plots` subfolders. You can explore the plots to gain insights into the packet data's characteristics.
+3. **Review Plots**: After running the script, the generated plots will be saved in the `res` subfolders. You can explore the plots to gain insights into the packet data's characteristics.
 
 ## Important Points to Take Into Account
 
@@ -69,10 +68,6 @@ The `final_packet_analyzer.py` script performs the following tasks:
 - Calculates and plots the complementary cumulative distribution function (CCDF) for packet sizes and saves it in the `CCDF` subfolder.
 - Clears any existing plot files in the `Plots` folder before generating new plots.
 
-## Additional Resources
-
-- `Article.pdf` provides more details about the project's background and objectives.
-- `Network Project PDF(dry part).pdf` contains answers to questions and a summary of the article.
 
 ## Contact
 
