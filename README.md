@@ -66,7 +66,7 @@ The `final_packet_analyzer.py` script performs the following tasks:
 - Generates packet length over time plots and saves them in the `IMD` subfolder.
 - Generates probability density function plots for inter-packet delays and saves them in the `PDF` subfolder.
 - Calculates and plots the complementary cumulative distribution function (CCDF) for packet sizes and saves it in the `CCDF` subfolder.
-- Clears any existing plot files in the `Plots` folder before generating new plots.
+- Clears any existing plot files in the `res` folder before generating new plots.
 
 
 ## Contact
