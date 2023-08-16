@@ -1,5 +1,12 @@
 # Packet Analysis and Visualization Tool
 
+Welcome to the WhatsApp Web Packet Analysis project repository! 
+This repository contains code and resources for analyzing packets from WhatsApp web group messages. 
+The project involves sniffing packets, identifying message-related packets, and generating helpful plots to facilitate packet identification. 
+The analysis is conducted in two distinct parts: one involving packet filtering, and the other simulating real-world noise with Spotify music playing in the background.
+
+## Introduction
+
 This Python script utilizes various libraries such as Matplotlib, NumPy, and Scapy to perform analysis and visualization on network packet data stored in CSV files. The script carries out the following tasks:
 
 Plot Packet Length over Time: It creates a bar graph that displays the packet length as it changes over time.
@@ -17,6 +24,8 @@ Clearing Previous Plot Files: Before generating new plots, the script clears exi
 Main Function: The main function orchestrates these steps, ensuring that plots are generated for various aspects of the packet data. It also prints a success message after generating the required files.
 
 The script is essentially designed to analyze network packet data, generate insightful visualizations, and manage the overall process in a structured manner.
+
+
 ## Project Structure
 
 The project directory contains the following folders:
@@ -39,7 +48,7 @@ The project directory contains the following folders:
 ```bash
 pip install matplotlib numpy scapy pandas
 ```
-## How to Use
+## Get started
 
 1. **Prepare CSV Files**: Place all your CSV files containing packet data in the `csv files` folder. You can obtain these CSV files by converting pcap recordings into CSV format using Wireshark or other similar tools.
 
@@ -53,7 +62,8 @@ pip install matplotlib numpy scapy pandas
 
 3. **Review Plots**: After running the script, the generated plots will be saved in the `res` subfolders. You can explore the plots to gain insights into the packet data's characteristics.
 
-## Important Points to Take Into Account
+## How to Use
+## Notes
 
 - Ensure your CSV files adhere to the necessary structure, including columns like 'Time', 'Length', and others as specified in the script.
 - You can obtain these CSV files by using Wireshark; simply export the data as CSV instead of PCAP.
@@ -71,4 +81,4 @@ The `final_packet_analyzer.py` script performs the following tasks:
 
 ## Contact
 
-For any questions or issues, please contact [Your Name] at [your.email@example.com].
+* Ori Sharaby
