@@ -41,7 +41,7 @@ The project directory contains the following folders:
     - `final_packet_analyzer.py`: The main Python file that runs the program.
 
 
-## Usage
+## Install
 
 1. Install the required libraries using the following command:
 
@@ -63,6 +63,13 @@ pip install matplotlib numpy scapy pandas
 3. **Review Plots**: After running the script, the generated plots will be saved in the `res` subfolders. You can explore the plots to gain insights into the packet data's characteristics.
 
 ## How to Use
+Export the software recordings to csv files, there are two classifications of recordings: clean recordings, recordings with background noise
+- filter the recordings with filter ip.src ==157.240.195.56 && tls
+
+- Filter the recordings with a tls || filter quic || udp || tcp
+
+Save the csv files in the 'csv files' subfolder which is in the 'resources' folder
+
 ## Notes
 
 - Ensure your CSV files adhere to the necessary structure, including columns like 'Time', 'Length', and others as specified in the script.
